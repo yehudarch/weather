@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <script src="weather.js"></script>
+
+</head>
+<body style="background-color: black;">
+    <h1 style="background-color: lightblue; text-align: center;">YEHUDA WEATHER</h1>
+    <div style="justify-content: center;">
+
+        <div style="display: flex; flex-direction: row;">
+            <div class="city">
+                <p>London</p>
+                <p id="london_temp"></p>
+            </div>    
+            <div class="city">
+                <p>Jerusalem</p>
+                <p id="jerusalem_temp"></p>
+            </div>    
+            <div class="city">
+                <p>Dubai</p>
+                <p id="dubai_temp"></p>
+            </div>    
+        </div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center;">
+    <button class="my-button" id="refresh" style="width: 100px; height: 40px; margin-top: 5; "  
+            onclick="getTemp()">Refresh</button>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div style="margin-top: 20px;">
+            <input type="text" id="city_id" placeholder="Enter city">
+            <button onclick="getTempByCity()">Get Temperature</button>
+        </div>
+        <div class="city">
+            <p id="cityName" style="text-transform: capitalize"></p>
+            <p id="selectedCityID"></p>
+        </div>
+    </div>
+    <div>
+        <button onclick="createPhotoMarker('london')">Get Picture</button>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+div.city {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10; 
+    background-color: lightblue;
+    height: 100px;
+    width: 30%;
+    border-radius: 20px;
+    max-width: 150;
+    /* align-items: center; */
+
+}
+
+.my-button:hover{
+    cursor: pointer;
+}
